@@ -1,4 +1,4 @@
-# Projeto boilerplate para javascript com webpack
+# Projeto boilerplate para javascript com webpack 
 
 Para atualizar as bibliotecas:
 ```powershell
