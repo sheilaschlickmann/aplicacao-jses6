@@ -1,13 +1,18 @@
 # Projeto boilerplate para javascript com webpack
 
 Para atualizar as bibliotecas:
-> yarn upgrade
+```powershell
+yarn upgrade
 
 Para baixar as dependencias:
-> yarn install
+```powershell
+yarn install
 
 Para rodar a aplicação:
-> yarn dev
+```powershell
+yarn dev
 
 Para fazer o build da aplicação:
-> yarn build
+```powershell
+yarn build
+```
