@@ -39,9 +39,9 @@ class App {
 
         try{
 
-        const response = await api.get(`/repos/${repoInput}`);
+            const response = await api.get(`/repos/${repoInput}`);
 
-        const { name, description, html_url, owner: { avatar_url} } = response.data;
+            const { name, description, html_url, owner: { avatar_url} } = response.data;
 
         this.repositories.push({
             name,
@@ -54,6 +54,7 @@ class App {
         this.render();
 
     } catch(err){
+        console.warn(err);
         alert('O repositório não existe!');
     }
     this.setLoading(false);
@@ -69,7 +70,7 @@ class App {
             titleEl.appendChild(document.createTextNode(repo.name));
             
             let descriptionEl = document.createElement('p');
-            descriptionEl = appendChild(document.createTextNode(repo.description));
+            descriptionEl.appendChild(document.createTextNode(repo.description));
 
             let linkEl = document.createElement('a');
             linkEl.setAttribute('target','_blank');
